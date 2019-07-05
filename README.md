@@ -1,7 +1,15 @@
 # Scrapy-Redis Spider for Tmall
 
 ## Current situation
-Trying to find a way to export data to csv alongside redis through scrapy-redis itself.
+Exporting to CSV file:
+1. Scrapy's FEED EXPORT functionality
+Problem: it doesn't remove duplicates
+
+2. Command line piping
+In redis's source folder, run:
+```
+./redis-cli -a 123456 lrange "quotes:items" 0 -1 > /Your/Path/output.csv
+```
 
 
 ## Getting Started

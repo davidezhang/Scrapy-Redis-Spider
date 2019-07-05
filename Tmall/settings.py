@@ -113,3 +113,17 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+# csv设置
+FEED_EXPORTERS = {
+    'csv': 'Tmall.spiders.csv_item_exporter.MyProjectCsvItemExporter',
+}
+
+FIELDS_TO_EXPORT = [
+    'text',
+    'author',
+    'tags',
+
+]
+
+FEED_URI = '/Users/daweizhang/Desktop/mydata.csv'
