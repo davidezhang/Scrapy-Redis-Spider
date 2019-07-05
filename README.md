@@ -4,6 +4,7 @@
 Exporting to CSV file:
 1. Scrapy's FEED EXPORT functionality
 Problem: it doesn't remove duplicates
+Possible Solution: manually customize TmallPipiline
 
 2. Command line piping
 In redis's source folder, run:
